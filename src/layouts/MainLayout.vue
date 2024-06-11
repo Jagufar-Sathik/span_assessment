@@ -6,7 +6,7 @@
           <span class="user-name flex justify-start">{{
             userStore.userInfo.companyName
           }}</span>
-          <div class="logo-container flex items-center">
+          <div class="logo-container q-px-sm flex items-center">
             <img
               :src="'src/assets/logo/' + userStore.userInfo.logoName"
               alt="User Logo"
@@ -49,7 +49,6 @@
 
 <script setup>
 import { ref } from "vue";
-import { useQuasar } from "quasar";
 import { useUserStore } from "stores/userStore";
 import { useRouter } from "vue-router";
 import PromptDialog from "src/components/PromptDialog.vue";

@@ -8,6 +8,10 @@ yarn
 # or
 npm install
 ```
+### Start the backend server (For doing API calls)
+```bash
+node server.js
+```
 
 ### Start the app in development mode (hot-code reloading, error reporting, etc.)
 ```bash
@@ -16,10 +20,12 @@ quasar dev
 
 
 ### Lint the files
+
+If the error throws run the below command to fix the lint issues.
 ```bash
-yarn lint
+yarn lint --fix
 # or
-npm run lint
+npm run lint --fix
 ```
 
 

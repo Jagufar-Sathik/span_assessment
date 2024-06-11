@@ -67,6 +67,7 @@ app.get("/api/login", (req, res) => {
     return res.status(401).json({ error: "Incorrect password" });
   }
 
+  // eslint-disable-next-line no-unused-vars
   const { password: _, ...userData } = user;
   res.status(200).json(userData);
 });

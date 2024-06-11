@@ -1,0 +1,30 @@
+{
+  "env": {
+    "browser": true,
+    "es2020": true
+  },
+  "extends": "eslint:recommended",
+  "parserOptions": {
+    "ecmaVersion": 12,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "asyncGenerators": true,
+      "asyncFunctions": false,
+      "classes": true,
+      "jsx": true, // Allow parsing of JSX
+      "optionalCatchBinding": true,
+      "optionalChaining": true,
+      "optionalReturn": true,
+      "restProperties": true,
+      "spreadProperties": false,
+      "staticClass": true,
+      "templateLiterals": true,
+      "throwExpressions": false
+    }
+  },
+  "rules": {
+    "no-console": "off",
+    "no-debugger": "off",
+    "no-undef": "off" // Disable reporting undefined variables
+  }
+}

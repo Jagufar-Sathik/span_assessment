@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import { route } from "quasar/wrappers";
 import {
   createRouter,
@@ -17,6 +18,7 @@ import routes from "./routes";
  */
 
 export default route(function (/* { store, ssrContext } */) {
+  // eslint-disable-next-line no-undef
   const createHistory = process.env.SERVER
     ? createMemoryHistory
     : process.env.VUE_ROUTER_MODE === "history"
